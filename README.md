@@ -10,6 +10,80 @@
 - 📊 Features: Transactions, Reports, Budgeting, AI Insights
 - ☁️ Deployment: Render (PostgreSQL + Web Service)
 
+- ## ⚙️ Challenges Faced
+
+- Managing relational data between users, categories, and transactions
+- Handling decimal precision for financial data
+- Deployment issues with environment variables on Render
+- Integrating multiple services like OAuth, AI, and Email
+## 🧪 How to Test
+
+### 🌐 Base URL
+https://finance-tracker-04nu.onrender.com
+
+---
+
+### 🔹 1. Health Check
+GET /api/health  
+→ Verifies server is running
+
+---
+
+### 🔹 2. Authentication
+
+- Register:
+  POST /api/auth/register
+
+- Login:
+  POST /api/auth/login
+
+---
+
+### 🔹 3. Transactions
+
+- Get all transactions:
+  GET /api/transactions
+
+- Create transaction:
+  POST /api/transactions
+
+---
+
+### 🔹 4. Reports
+
+- Summary:
+  GET /api/reports/summary
+
+- Monthly:
+  GET /api/reports/monthly
+
+---
+
+### 🔹 5. Google OAuth
+
+Visit:
+https://finance-tracker-04nu.onrender.com/api/auth/google
+
+---
+
+### 🔹 6. AI Features
+
+- Get insights:
+  GET /api/ai/insights
+
+- Chat:
+  POST /api/ai/chat
+
+---
+
+### 🔹 7. Budget Alerts
+
+1. Create a budget using:
+   POST /api/budgets
+
+2. Add transactions exceeding the limit
+
+→ Notification will be triggered
 AI-Powered Personal Finance Tracker built with Node.js, Express, and PostgreSQL.
 
 ## Features
