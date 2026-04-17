@@ -1,6 +1,15 @@
 # Personal Finance Tracker
 🚀 Live Demo: https://finance-tracker-04nu.onrender.com
 
+## 📌 Submission Summary
+
+- 🚀 Live Demo: https://finance-tracker-04nu.onrender.com
+- 📂 GitHub Repo: https://github.com/Sayan-1123/FJ-BE-R2-SayanMandal-IITKharagpur
+- 🛠 Tech Stack: Node.js, Express.js, PostgreSQL
+- 🔐 Authentication: JWT + Google OAuth
+- 📊 Features: Transactions, Reports, Budgeting, AI Insights
+- ☁️ Deployment: Render (PostgreSQL + Web Service)
+
 AI-Powered Personal Finance Tracker built with Node.js, Express, and PostgreSQL.
 
 ## Features
