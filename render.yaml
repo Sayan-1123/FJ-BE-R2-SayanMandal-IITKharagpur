@@ -1,0 +1,48 @@
+databases:
+  - name: finance-tracker-db
+    databaseName: finance_tracker
+    user: finance_user
+    plan: free
+
+services:
+  - type: web
+    name: finance-tracker
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_HOST
+        fromDatabase:
+          name: finance-tracker-db
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: finance-tracker-db
+          property: port
+      - key: DB_NAME
+        fromDatabase:
+          name: finance-tracker-db
+          property: database
+      - key: DB_USER
+        fromDatabase:
+          name: finance-tracker-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: finance-tracker-db
+          property: password
+      - key: JWT_SECRET
+        generateValue: true
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: GOOGLE_CALLBACK_URL
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: SENDGRID_API_KEY
+        sync: false
