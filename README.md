@@ -1,10 +1,10 @@
-# Personal  Finance Tracker  Project
+# Personal Finance Tracker Project
 🚀 Live Demo: https://finance-tracker-04nu.onrender.com
 
-# Loom Video Link:
+#  Loom Video Link:
 https://www.loom.com/share/bcdd570f5e3d44788abb1a569c788163
 
-## 📌 Submission Summary
+## 📌  Submission Summary
 
 - 🚀 Live Demo: https://finance-tracker-04nu.onrender.com
 - 📂 GitHub Repo: https://github.com/Sayan-1123/FJ-BE-R2-SayanMandal-IITKharagpur
